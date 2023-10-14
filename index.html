@@ -522,7 +522,14 @@
           <div class="input-container">
             <label for="phone">
               Telephone
-              <input class="textfield" type="numbers" id="phone" />
+              <input 
+              class="textfield" 
+              type="tel" 
+              name="phone"
+              id="phone"
+              pattern="[0-9]{10}"
+              required
+              />
               <svg><use href="./icons.svg#icon-phone" /></svg>
             </label>
           </div>
