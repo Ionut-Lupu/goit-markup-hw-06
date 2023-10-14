@@ -772,6 +772,7 @@ footer .logo {
 
 .subscribe-container {
   display: flex;
+  gap: 12px;
 }
 
 .text-subscribe {
@@ -818,7 +819,6 @@ footer .logo {
   justify-content: center;
   border: none;
   padding: 0;
-  margin-left: 12px;
   margin-top: 47px;
   cursor: pointer;
 }
