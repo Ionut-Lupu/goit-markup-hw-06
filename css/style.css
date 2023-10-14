@@ -1,7 +1,6 @@
 :root {
   --active-link: #2196f3;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --text-font-family:
 }
 
 body {
@@ -16,7 +15,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*flex-wrap: wrap;*/
   height: 80px;
   border-bottom: 1px solid #ececec;
 }
@@ -322,8 +320,6 @@ h2 {
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   margin-top: 50px;
-
-  /* material shadow v1 */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -792,8 +788,6 @@ footer .logo {
   gap: 20px;
 }
 
-
-
 .email-field {
   width: 358px;
   height: 50px;
@@ -810,8 +804,6 @@ footer .logo {
 .footer-container .email-field {
   cursor: auto;
 }
-
-
 
 .subscribe-btn {
   width: 200px;
@@ -831,7 +823,7 @@ footer .logo {
   cursor: pointer;
 }
 
-.subscribe-btn:hover{
+.subscribe-btn:hover {
   background-color: #188ce8;
   transition: var(--transition);
 }
@@ -858,11 +850,11 @@ footer .logo {
 }
 
 .textfield,
- textarea {
+textarea {
   height: 40px;
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.20);
-outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
 }
 
 .input-container input {
@@ -873,7 +865,6 @@ textarea {
   padding: 12px;
   height: 120px;
   resize: none;
- 
 }
 
 .input-container label {
@@ -893,12 +884,12 @@ textarea {
 
 label {
   color: #757575;
-font-family: Roboto;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.12px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
 }
 
 .contact-form span {
@@ -921,34 +912,33 @@ textarea:hover {
 input:focus,
 label:focus,
 textarea:focus {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
   transition: var(--transition);
-
 }
 
 input:focus + svg {
-  fill: var(--active-link)
+  fill: var(--active-link);
 }
 
 .form-btn-send {
   width: 200px;
-height: 50px;
-flex-shrink: 0;
-border-radius: 4px;
-background: #188CE8;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-color: #FFF;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px; /* 187.5% */
-letter-spacing: 0.96px;
-margin: auto;
-border: none;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  margin: auto;
+  border: none;
 }
 
 .form-btn-send:hover {
-  background-color: #2196F3;
+  background-color: #2196f3;
   transition: var(--transition);
 }
 
@@ -958,25 +948,25 @@ border: none;
   padding-bottom: 10px;
 }
 
-.terms-and-conditions  {
-display: flex;
-align-items: center;
-flex-direction: row;
-gap: 8px;
+.terms-and-conditions {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
 }
 
 .terms-and-conditions span {
   color: #757575;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
 }
 
 .terms-and-conditions a {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .terms-and-conditions > svg {
@@ -989,7 +979,7 @@ letter-spacing: 0.42px;
 .checkbox {
   width: 16px;
   height: 15px;
-  position: relative;  
+  position: relative;
 }
 input:checked + label > svg {
   display: none;
