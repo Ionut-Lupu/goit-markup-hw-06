@@ -281,6 +281,33 @@
               </a>
             </div>
           </div>
+
+          <!--subscibe-section-->
+          <form class="subscribe-container">
+            <div>
+              <label for="email" class="text-subscribe">
+                Subscribe to the newsletter
+                <input
+                id="email"
+                  class="email-field"
+                  type="email"
+                  placeholder="E-mail"
+                  name="mail"
+                  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                  required
+                />
+              </label>
+            </div>
+
+            <div>
+              <button class="subscribe-btn">
+                <span>Subscribe</span>
+                <svg>
+                  <use href="./icons.svg#icon-send" />
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </footer>
     </main>

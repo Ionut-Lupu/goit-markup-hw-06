@@ -1,6 +1,7 @@
 :root {
   --active-link: #2196f3;
-  --transition: 250ms;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --text-font-family:
 }
 
 body {
@@ -653,6 +654,7 @@ h2 {
   background: #2f303a;
   display: flex;
   justify-content: center;
+  padding: 60px 0;
 }
 
 footer .studio {
@@ -669,7 +671,6 @@ footer .logo {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 60px;
 }
 
 .footer-social-media-container h3 {
@@ -749,7 +750,7 @@ footer .logo {
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  transform: scale(0.8);
+  padding: 40px;
 }
 
 .close-btn {
@@ -761,6 +762,10 @@ footer .logo {
   background: none;
   cursor: pointer;
   display: flex;
+}
+
+.close-btn svg:hover {
+  fill: var(--active-link);
 }
 
 .close-btn svg {
@@ -782,7 +787,12 @@ footer .logo {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin: 10px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
+
 
 .email-field {
   width: 358px;
@@ -794,11 +804,14 @@ footer .logo {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-.email-field {
   color: #fff;
 }
+
+.footer-container .email-field {
+  cursor: auto;
+}
+
+
 
 .subscribe-btn {
   width: 200px;
@@ -814,11 +827,16 @@ footer .logo {
   border: none;
   padding: 0;
   margin-left: 12px;
-  margin-top: 46px;
+  margin-top: 47px;
   cursor: pointer;
 }
 
-.subscribe-btn h3 {
+.subscribe-btn:hover{
+  background-color: #188ce8;
+  transition: var(--transition);
+}
+
+.subscribe-btn span {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -831,4 +849,148 @@ footer .logo {
   width: 24px;
   height: 24px;
   margin-left: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textfield,
+ textarea {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.20);
+outline: none;
+}
+
+.input-container input {
+  padding: 12px 12px 12px 42px;
+}
+
+textarea {
+  padding: 12px;
+  height: 120px;
+  resize: none;
+ 
+}
+
+.input-container label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-container svg {
+  position: absolute;
+  width: 19px;
+  height: 18px;
+  bottom: 11px;
+  left: 12px;
+}
+
+label {
+  color: #757575;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.12px;
+}
+
+.contact-form span {
+  color: #212121;
+  text-align: center;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin: 0px;
+}
+
+input:hover,
+label:hover,
+textarea:hover {
+  cursor: pointer;
+}
+
+input:focus,
+label:focus,
+textarea:focus {
+  border: 1px solid #2196F3;
+  transition: var(--transition);
+
+}
+
+input:focus + svg {
+  fill: var(--active-link)
+}
+
+.form-btn-send {
+  width: 200px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #188CE8;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+margin: auto;
+border: none;
+}
+
+.form-btn-send:hover {
+  background-color: #2196F3;
+  transition: var(--transition);
+}
+
+.terms-and-contitions-container {
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.terms-and-conditions  {
+display: flex;
+align-items: center;
+flex-direction: row;
+gap: 8px;
+}
+
+.terms-and-conditions span {
+  color: #757575;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.42px;
+}
+
+.terms-and-conditions a {
+  color: #2196F3;
+}
+
+.terms-and-conditions > svg {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.checkbox {
+  width: 16px;
+  height: 15px;
+  position: relative;  
+}
+input:checked + label > svg {
+  display: none;
 }

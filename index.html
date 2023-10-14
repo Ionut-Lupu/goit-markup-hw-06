@@ -469,13 +469,15 @@
           <!--subscibe-section-->
           <form class="subscribe-container">
             <div>
-              <h3 class="text-subscribe">Subscribe to the newsletter</h3>
-              <label for="email">
+              <label for="email" class="text-subscribe">
+                Subscribe to the newsletter
                 <input
+                id="email"
                   class="email-field"
-                  type="text"
+                  type="email"
                   placeholder="E-mail"
                   name="mail"
+                  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                   required
                 />
               </label>
@@ -483,7 +485,7 @@
 
             <div>
               <button class="subscribe-btn">
-                <h3>Subscribe</h3>
+                <span>Subscribe</span>
                 <svg>
                   <use href="./icons.svg#icon-send" />
                 </svg>
@@ -500,6 +502,79 @@
         <button class="close-btn" data-modal-close>
           <svg><use href="./icons.svg#icon-close"</svg>
         </button>
+
+        <form class="contact-form" action="" method="get" autocomplete="off">
+          <span>Leave your information and we'll call you back</span>
+          <div class="input-container">
+            <label for="name">
+              Name
+              <input
+                class="textfield"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+              <svg><use href="./icons.svg#icon-person" /></svg>
+            </label>
+          </div>
+
+          <div class="input-container">
+            <label for="phone">
+              Telephone
+              <input class="textfield" type="numbers" id="phone" />
+              <svg><use href="./icons.svg#icon-phone" /></svg>
+            </label>
+          </div>
+
+          <div class="input-container">
+            <label for="email">
+              Email
+              <input
+                class="textfield"
+                id="email"
+                type="email"
+                name="mail"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                required
+              />
+              <svg><use href="./icons.svg#icon-email" /></svg>
+            </label>
+          </div>
+
+          <div class="input-container">
+            <label for="comments">
+              Comments
+              <textarea
+                name="comments"
+                id="comments"
+                cols="30"
+                rows="6"
+                placeholder="Enter the text"
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="terms-and-contitions-container">
+            <label class="terms-and-conditions" for="checkbox">
+              <input class="checkbox"
+              id="checkbox"
+                type="checkbox"
+                name="terms-and-conditions"
+                value="checked"
+              />
+              <span 
+                >I agree with the letter and accept the
+                <a href="https://goit.global/ro/terms-of-use/">Terms and Conditions</a>
+              </span>
+              <svg>
+                <use href="./icons.svg#icon-check"/>
+              </svg>
+            </label>
+          </div>
+
+          <input class="form-btn-send" type="submit" value="Send" />
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
