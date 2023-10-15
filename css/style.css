@@ -970,17 +970,25 @@ input:focus + svg {
 }
 
 .terms-and-conditions > svg {
-  width: 16px;
-  height: 15px;
+  width: 15px;
+  height: 16px;
   position: absolute;
-  visibility: hidden;
 }
 
 .checkbox {
   width: 16px;
-  height: 15px;
+  height: 16px;
   position: relative;
+  z-index: 1;
 }
-input:checked + label > svg {
-  display: none;
+
+.terms-and-contitions-container
+.terms-and-conditions
+.checkbox {
+  transition: none;
+}
+
+input:checked {
+  visibility: hidden;
+  transition: var();
 }
