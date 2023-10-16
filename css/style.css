@@ -687,6 +687,11 @@ footer .logo {
   justify-content: space-between;
 }
 
+.footer-icon-social-media {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
 .footer-icon-social-media svg {
   width: 44px;
   height: 44px;
@@ -696,20 +701,9 @@ footer .logo {
   fill: currentColor;
 }
 
-.footer-icon-social-media svg {
-  background: rgba(255, 255, 255, 0.1);
-  flex-shrink: 0;
-  border-radius: 40%;
-  display: flex;
-  align-items: center;
-}
-
 .footer-icon-social-media:hover {
   background: #2196f3;
   fill: #ffffff;
-  border-radius: 40%;
-  display: flex;
-  align-items: center;
   transition: background-color var(--transition);
 }
 
@@ -990,5 +984,5 @@ input:focus + svg {
 
 input:checked {
   visibility: hidden;
-  transition: var();
+  transition: var(--transition);
 }
